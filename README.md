@@ -2,6 +2,8 @@
 
 **Student Academic Performance Prediction Using a NumPy-Based Artificial Neural Network**
 
+**Live demo: https://devranvijay-edupredict-ai-app-ltgqwr.streamlit.app/**
+
 A one-hidden-layer ANN (16 ReLU neurons, linear output) written from scratch in NumPy — forward pass,
 MSE loss, backpropagation, gradient descent — trained on a **synthetic** student dataset (8 subjects,
 2,000 simulated students, 12,000 student–subject rows, 32 columns) and served through a Streamlit dashboard.
