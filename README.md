@@ -56,6 +56,4 @@ python -m src.learning_rules     # McCulloch-Pitts / Hebb / Delta rule printouts
 | ANN `during_term` | 4.99 | 6.26 | 0.86 |
 | ANN `late` | 3.01 | 3.77 | 0.95 |
 
-Predictions are statistical estimates, not guarantees, and the what-if explorer is not causal.
-The first version of this project used the UCI *Student Performance* data; it was replaced by the synthetic
-set because UCI has no attendance or assignment columns.
+
