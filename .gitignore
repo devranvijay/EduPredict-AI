@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# local tool config (not part of the project)
+.agents/
+.claude/
+
+# original UCI download kept outside the repo; the project now uses the synthetic dataset
+student/
+
+# scratch
+app_preview.py
