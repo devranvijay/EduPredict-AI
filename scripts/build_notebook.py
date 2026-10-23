@@ -372,7 +372,7 @@ pd.DataFrame(steps).head(8)
 
     md("""
 ## 12. Delta rule on the student data
-The same rule, now on real columns: one linear neuron learns to predict final marks from **attendance, quiz average and study hours**,
+The Delta rule, applied to the student data: one linear neuron learns to predict final marks from **attendance, quiz average and study hours**,
 one student at a time. We compare it with the best straight-line fit (the most a single neuron can do) and with the 16-neuron network.
 Backpropagation extends the same error-driven idea through hidden layers using the chain rule; it is not identical to the single-neuron Delta rule.
 """)
