@@ -1,6 +1,6 @@
 """Classic neuron models with every calculation exposed as a table row.
 
-Run `python -m src.learning_rules` to print all three demonstrations.
+Running this module as a script prints all three demonstrations.
 """
 import numpy as np
 

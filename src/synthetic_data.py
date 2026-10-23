@@ -1,7 +1,7 @@
 """Generate a SYNTHETIC student-performance dataset (one row per student x subject).
 
 All values are simulated from the causal story written below - not real students.
-Run: python -m src.synthetic_data  ->  data/raw/edupredict_synthetic.csv
+Running this module as a script writes the dataset to a CSV file; `generate()` returns it as a DataFrame.
 """
 from pathlib import Path
 

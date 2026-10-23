@@ -1,7 +1,7 @@
 """Loading, encoding, scaling and splitting of the synthetic EduPredict dataset.
 
 Everything fitted (means, stds, category lists) comes from the TRAIN split only
-and is stored in a JSON config so the dashboard applies the identical transform.
+and is stored in a JSON config so exactly the same transform can be applied to new rows later.
 """
 import json
 from pathlib import Path
@@ -32,9 +32,9 @@ EXCLUDED = ["final_exam_score", "grade_letter", "passed", TARGET]
 
 
 def load_raw(path=DATA_PATH):
-    """Read the synthetic dataset. Generate it first with `python -m src.synthetic_data`."""
+    """Read the synthetic dataset from a CSV file (create it with the synthetic_data module if it is missing)."""
     if not Path(path).exists():
-        raise FileNotFoundError(f"{path} not found - run `python -m src.synthetic_data` first")
+        raise FileNotFoundError(f"{path} not found - generate it with the synthetic_data module first")
     df = pd.read_csv(path)
     if df.isna().any().any():
         raise ValueError("Dataset contains missing values")

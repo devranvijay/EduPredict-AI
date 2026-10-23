@@ -38,7 +38,8 @@ jupyter notebook notebooks/edupredict_walkthrough.ipynb   # optional walkthrough
 | `src/learning_rules.py` | McCulloch-Pitts, Hebb, Delta rule demos, plus a Delta-rule neuron trained on the student data |
 | `models/<variant>/` | `weights.npz`, `preprocessing.json` for `early`, `during_term`, `late` |
 | `results/` | `metrics.json`, `predictions.csv`, `training_history.csv`, `training_overview.png` |
-| `notebooks/edupredict_walkthrough.ipynb` | Step-by-step walkthrough on the same data, split and saved models; outputs are saved so it reads on GitHub |
+| `notebooks/` | Self-contained walkthrough folder: the notebook plus its own copy of the code and the dataset, so it can be taken on its own ([notebooks/README.md](notebooks/README.md)) |
+| `scripts/sync_notebook_folder.py` | Refreshes the copies inside `notebooks/` from `src/` and `data/raw/` (a test fails if they drift) |
 | `docs/` | [architecture](docs/architecture.md), [report](docs/REPORT.md), [dataset](docs/synthetic_dataset.md), [presentation](docs/PRESENTATION.md), [viva](docs/VIVA.md) |
 
 ## Three models: when is the information available?
