@@ -14,3 +14,6 @@ student/
 
 # scratch
 app_preview.py
+
+# jupyter
+.ipynb_checkpoints/

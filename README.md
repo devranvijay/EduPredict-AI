@@ -22,6 +22,7 @@ python train.py                  # trains three models, writes models/ and resul
 streamlit run app.py             # dashboard
 python -m pytest                 # tests (incl. numerical gradient check)
 python -m src.learning_rules     # McCulloch-Pitts / Hebb / Delta rule printouts
+jupyter notebook notebooks/edupredict_walkthrough.ipynb   # optional walkthrough (pip install jupyter first)
 ```
 
 ## Layout
@@ -37,6 +38,7 @@ python -m src.learning_rules     # McCulloch-Pitts / Hebb / Delta rule printouts
 | `src/learning_rules.py` | McCulloch-Pitts, Hebb, Delta rule demos, plus a Delta-rule neuron trained on the student data |
 | `models/<variant>/` | `weights.npz`, `preprocessing.json` for `early`, `during_term`, `late` |
 | `results/` | `metrics.json`, `predictions.csv`, `training_history.csv`, `training_overview.png` |
+| `notebooks/edupredict_walkthrough.ipynb` | Step-by-step walkthrough on the same data, split and saved models; outputs are saved so it reads on GitHub |
 | `docs/` | [architecture](docs/architecture.md), [report](docs/REPORT.md), [dataset](docs/synthetic_dataset.md), [presentation](docs/PRESENTATION.md), [viva](docs/VIVA.md) |
 
 ## Three models: when is the information available?
