@@ -1,4 +1,4 @@
-"""Build notebooks/edupredict_walkthrough.ipynb: one self-contained notebook where all the code is visible.
+"""Build notebooks/EduPredict_AI.ipynb: one self-contained notebook where all the code is visible.
 
 The notebook does not import anything from this project. The functions it shows are copied as source text from
 src/*.py (so they cannot drift from the tested code), and the dataset is copied next to it.
@@ -15,7 +15,7 @@ import nbformat as nbf
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
-NOTEBOOK = ROOT / "notebooks" / "edupredict_walkthrough.ipynb"
+NOTEBOOK = ROOT / "notebooks" / "EduPredict_AI.ipynb"
 DATA_SOURCE = ROOT / "data" / "raw" / "edupredict_synthetic.csv"
 DATA_COPY = ROOT / "notebooks" / "data" / "edupredict_synthetic.csv"
 
@@ -95,7 +95,7 @@ import pandas as pd
 from sklearn.model_selection import GroupShuffleSplit   # used only to split students into train / validation / test
 
 HERE = Path.cwd()
-if (HERE / "notebooks" / "edupredict_walkthrough.ipynb").exists():     # notebook opened from the folder above
+if (HERE / "notebooks" / "EduPredict_AI.ipynb").exists():     # notebook opened from the folder above
     HERE = HERE / "notebooks"
 DATA_FILE = HERE / "data" / "edupredict_synthetic.csv"
 

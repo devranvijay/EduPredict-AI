@@ -22,7 +22,7 @@ python train.py                  # trains three models, writes models/ and resul
 streamlit run app.py             # dashboard
 python -m pytest                 # tests (incl. numerical gradient check)
 python -m src.learning_rules     # McCulloch-Pitts / Hebb / Delta rule printouts
-jupyter notebook notebooks/edupredict_walkthrough.ipynb   # optional walkthrough (pip install jupyter first)
+jupyter notebook notebooks/EduPredict_AI.ipynb   # optional notebook (pip install jupyter first)
 ```
 
 ## Layout

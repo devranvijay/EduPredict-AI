@@ -3,7 +3,7 @@
 One notebook where everything happens: copy this folder anywhere and run it.
 
 ```
-edupredict_walkthrough.ipynb     the notebook - all the code is in its cells (start here)
+EduPredict_AI.ipynb              the notebook - all the code is in its cells (start here)
 data/edupredict_synthetic.csv    the dataset: 12,000 rows = 2,000 simulated students x 6 of 8 subjects, 32 columns
 requirements.txt                 Python packages
 ```
@@ -15,7 +15,7 @@ the notebook generates it (the generator is in its first sections, and is determ
 
 ```bash
 pip install -r requirements.txt
-jupyter notebook edupredict_walkthrough.ipynb      # or open it in VS Code and choose Run All
+jupyter notebook EduPredict_AI.ipynb      # or open it in VS Code and choose Run All
 ```
 
 It takes under a minute: the notebook trains three networks (`early`, `during_term`, `late`) that differ in which inputs
